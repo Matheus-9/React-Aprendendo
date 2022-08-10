@@ -9,9 +9,9 @@ function Home () {
     handleGetUserData();
   }, []);
 
-
+  //CONSUMO DA API:
   async function handleGetUserData() {
-    const response = await fetch("/api/fruit/:nutrition?min=0&max=1000");
+    const response = await fetch("");
     const data = await response.json();
     console.log(data);
     return data;
@@ -62,8 +62,8 @@ function Home () {
   return (
     <>
     <ProjectDescriprion 
-    title="Brincando com props" 
-    subTitle="Sub titulo da aplicação"
+    title="Suas Atividades" 
+    subTitle="Fique atento a suas ativides pendentes"
     />
 
   <input type='text' 
